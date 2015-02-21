@@ -7,6 +7,11 @@ if (Meteor.isClient) {
 	}
     });
     Template.body.events({
+	"submit .picture-save": function(ev){
+	    _.each(ev.srcElement.files, function(file) {
+		Meteor.saveFile(file, file.name);
+	    });
+	},
 	"submit .new-picture" : function(event){
 	    console.log("WTF"); 
 	    var text = event.target.name.value;
