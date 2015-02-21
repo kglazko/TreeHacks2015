@@ -11,9 +11,10 @@ if (Meteor.isClient) {
 	    _.each(ev.srcElement.files, function(file) {
 		Meteor.saveFile(file, file.name);
 	    });
+	    console.log("New entry added successfully"); 
+	    return false;
 	},
 	"submit .new-picture" : function(event){
-	    console.log("WTF"); 
 	    var text = event.target.name.value;
 	    var long = event.target.long.value;
 	    var lat = event.target.lat.value;
@@ -24,6 +25,7 @@ if (Meteor.isClient) {
 		longitude: long,
 		latitude: lat
 	    });
+	    console.log("New entry added successfully"); 
 	    event.target.name.value="";
 	    event.target.long.value="";
 	    event.target.lat.value="";
