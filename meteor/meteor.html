@@ -1,0 +1,28 @@
+<head>
+  <title>meteor</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Pictures</h1>
+    </header>
+
+    <ul>
+      {{#each pictures}}
+        {{> picture}}
+      {{/each}}
+    </ul>
+  </div>
+Form:
+<form class="new-picture">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="long" placeholder="Long" />
+    <input type="text" name="lat" placeholder="Lat" />
+<input type="submit" />
+</form>
+</body>
+
+<template name="picture">
+<li>{{created}} : {{name}} @ {{longitude}} &amp; {{latitude}} </li>
+</template>
