@@ -25,7 +25,6 @@ equitiesControllers.controller('HomeCtrl', ['$scope', '$sce', '$routeParams', '$
                     })
                     .error(function(data, status, headers, config) {
                     });
-            row++;
         }
         $http.get("http://treehacks.cloudapp.net/cheese/god.php?action=setsquares&sun_long=123&sun_lat=32.08")
                 .success(function(data, status, headers, config) {
