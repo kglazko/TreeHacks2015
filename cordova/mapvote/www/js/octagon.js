@@ -18,7 +18,7 @@ var equitiesControllers = angular.module('octagonControllers', []);
 equitiesControllers.controller('HomeCtrl', ['$scope', '$sce', '$routeParams', '$http', function($scope, $sce, $routeParams, $http) {
         $scope.isLoading = true;
         $scope.huzzah = function(element) {
-            $http.post("http://treehacks.cloudapp.net/cheese/god.php", { action:squareroot,superuniqueuuididentificationidentifier:element.superuniqueuuididentificationidentifier})
+            $http.post("http://treehacks.cloudapp.net/cheese/god.php", { action:'squareroot',superuniqueuuididentificationidentifier:element.superuniqueuuididentificationidentifier})
                     .success(function(data, status, headers, config) {
                         element.disabled = true;
                         element.vector++;
