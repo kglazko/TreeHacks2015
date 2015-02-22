@@ -36,7 +36,11 @@
     </head>
 
 
-    <body>
+    <body ng-app="octagon">
+
+        <div ng-if="isLoading">
+            <img src="img/loading3.gif"/>
+        </div>
 
 
         <div class="row" id="header" style="background-color:#990033; color:white">
@@ -57,75 +61,29 @@
         </div>
 
 
+        <div class="scrollable" ng-if="!isLoading">  
+            <div class="col-xs-4" style="background-color: navy; color: white" ng-repeat="fake in faker">
 
-        <div class="col-xs-4" style="background-color: navy; color: white">
-
-            <div class = "row">
-                <img src="img/highway.jpg" height="150px"> 
-            </div>
-
-            <div class = "row">
-                <div class="col-xs-6">
-                    <button type="button" class="btn btn-info btn-sm">
-                        Like
-                    </button></div>
-
-                <div class="col-xs-6">
-                    +129
+                <div class = "row">
+                    <img ng-src="img/{{fake.power}}" height="150px"> 
                 </div>
+                <div class = "row">
+                    <div class="col-xs-6">
+                        <button type="button" class="btn btn-info btn-sm">
+                            Like
+                        </button></div>
 
-            </div>
-
-        </div>
-
-        <div class="col-xs-4" style="background-color: navy; color: white">
-
-            <div class = "row">
-                <img src="img/highway.jpg" height="150px"> 
-            </div>
-
-            <div class = "row">
-                <div class="col-xs-6">
-                    <button type="button" class="btn btn-info btn-sm">
-                        Like
-                    </button></div>
-
-                <div class="col-xs-6">
-                    +12
+                    <div class="col-xs-6">
+                        +{{faker.vector}}
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
-        <div class="col-xs-4" style="background-color: navy; color: white">
-
-            <div class = "row">
-                <img src="img/highway.jpg" height="150px"> 
-            </div>
-
-            <div class = "row">
-                <div class="col-xs-6">
-                    <button type="button" class="btn btn-info btn-sm">
-                        Like
-                    </button></div>
-
-                <div class="col-xs-6">
-                    +30
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+                app.initialize();
         </script>
     </body>
 </html>
