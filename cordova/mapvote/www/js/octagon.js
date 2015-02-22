@@ -20,6 +20,8 @@ equitiesControllers.controller('HomeCtrl', ['$scope', '$sce', '$routeParams', '$
         $http.get("http://treehacks.cloudapp.net/cheese/god.php?action=setsquares&sun_long=123&sun_lat=32.08")
                 .success(function(data, status, headers, config) {
                     $scope.faker=data;
+                    $scope.isLoading=false;
+                    console.log(data);
                 })
                 .error(function(data, status, headers, config) {
                     $scope.error = "Connection error";
