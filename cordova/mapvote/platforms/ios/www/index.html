@@ -27,112 +27,72 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
         <title>Hello World</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" href="lib/mobile-angular-1.2.0/css/mobile-angular-ui-base.min.css" />
+        <link rel="stylesheet" href="lib/mobile-angular-1.2.0/css/mobile-angular-ui-hover.min.css" />
+        <link rel="stylesheet" href="lib/mobile-angular-1.2.0/css/mobile-angular-ui-desktop.min.css" />
+        <script src="lib/angular-1.3.8/js/angular.min.js"></script>
+        <script src="lib/angular-1.3.8/js/angular-route.min.js"></script>
+        <script src="lib/mobile-angular-1.2.0/js/mobile-angular-ui.min.js"></script>
+        <script src="lib/mobile-angular-1.2.0/js/mobile-angular-ui.gestures.min.js"></script>
+        <script src="js/octagon.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     </head>
 
 
+    <body ng-app="octagon">
 
 
 
 
-    <body>
-     
-
-        <div class="row" id="header" style="background-color:blue; color:white">
-         <span class="glyphicon glyphicon-map-marker"></span> <h1> Palto Alto, CA</h1> 
-        </div>
-
-        <div id="camera">
-            <button class="camera-control" onclick="capturePhoto();">Capture Photo</button>
-            <div style="text-align:center;margin:20px;">
-            <img id="cameraPic" src="" style="width:auto;height:120px;"></img>
+        <div class="row" id="header" style="background-color:#990033; color:white; padding-top:20px">
+            <div class="col-xs-8">
+                <h1 style="font-family: 'Indie Flower', cursive; padding-top:10px;">City Vote</h1>
             </div>
-        </div>
-
-
-        <div class="row" id="photo_row_1">
 
             <div class="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
-            </div>
-
-            <div class ="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
-            </div>
-
-            <div class ="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
+                <button id="startCam" style="background-color:#990033; border-color:#990033"><img src="img/camicon.png"></button>
             </div>
 
         </div>
 
 
-        <div class="row" id="photo_row_2">
-
-            <div class="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
-            </div>
-
-            <div class ="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
-            </div>
-
-            <div class ="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
-            </div>
-
+        <div class="row" id="location" style="background-color:#C26685
+             ; color:white">
+            <center><font style="font-family: 'Josefin Slab', serif; font-size:20px"> Palo Alto, CA</font> </center>
         </div>
 
-        <div class="row" id="photo_row_1">
-
-            <div class="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
+        <div ng-controller="HomeCtrl">
+            <div ng-if="isLoading">
+                <img src="img/loading3.gif"/>
             </div>
 
-            <div class ="col-xs-4">
+            <div ng-if="!isLoading">  
+                <div class="col-xs-4" style="background-color: navy; color: white" ng-repeat="fake in faker">
 
-                <img src="img/highway.jpg" height="150px"> 
+                    <div class = "row">
+                        <img ng-src="http://treehacks.cloudapp.net/sprocket/{{fake.power}}" height="150px"> 
+                    </div>
+                    <div class = "row">
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-info btn-sm">
+                                Like
+                            </button></div>
 
+                        <div class="col-xs-6">
+                            +{{fake.vector}}
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class ="col-xs-4">
-
-                <img src="img/highway.jpg" height="150px"> 
-
-            </div>
-
+            {{error}}
         </div>
-
-
-
-            <div class="row">
-                <a type="btn" href="#form"> Hello! </a>
-            </div>
-        </div>
-
-
-
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 </html>
