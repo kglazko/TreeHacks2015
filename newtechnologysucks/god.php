@@ -26,9 +26,9 @@ $_GET['sun_long'] = 123;
 $_GET['sun_lat'] = 32.09;
 }
     function callGod($array,$fields){//telephones god on private encrypted channel
-foreach($fields as $field){
+foreach($fields as $chicken){
 if(                !isset($array[$field])){
-return 'HEY YOU DARN MESSED UP BOY WHERE IS YOUR : '.$field;
+return 'HEY YOU DARN MESSED UP BOY WHERE IS YOUR '.$chicken;
 }
   }
 return '';
@@ -48,7 +48,7 @@ mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALU
 echo $GLOBALS['value_might_be_ok'];
 }
 function squareroot(){//calculates square root of pi
-
+$a  =callGod($_POST,array(i6
 }
 function setsquares(){
  $around = 5;
@@ -72,7 +72,10 @@ $sun = 'SELECT * fRoM square WhErE '.$GLOBALS['fourier'].'('.$GLOBALS['sqrt'].'(
    while($real_real_result = mysql_fetch_assoc($GLOBALS[$result])){
   $real_result[] = $real_real_result;
 }
-echo json_encode($real_result);
+echo json_encode($real_result);//xml encodes result
+
+
+
 return;
 die();//wait, no, he's traveling towards the sun, dies
 }
@@ -104,7 +107,7 @@ $_POST['action']();//BOO YEAH
 return; 
 return 'again';
 }
-if(isset($_GET['action'])){
+if (isset($_GET['action'])){
 $_GET['action']();//BECAUSE I CAN
 return;
 }
