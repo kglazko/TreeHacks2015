@@ -58,35 +58,35 @@
             <center><font style="font-family: 'Josefin Slab', serif; font-size:20px"> Palo Alto, CA</font> </center>
         </div>
 
+        <div ng-controller="HomeCtrl">
+            <div ng-if="isLoading">
+                <img src="img/loading3.gif"/>
+            </div>
 
-        <div ng-if="isLoading">
-            <img src="img/loading3.gif"/>
-        </div>
+            <div class="scrollable" ng-if="!isLoading">  
+                <div class="col-xs-4" style="background-color: navy; color: white" ng-repeat="fake in faker">
 
-        <div class="scrollable" ng-if="!isLoading">  
-            <div class="col-xs-4" style="background-color: navy; color: white" ng-repeat="fake in faker">
+                    <div class = "row">
+                        <img ng-src="img/{{fake.power}}" height="150px"> 
+                    </div>
+                    <div class = "row">
+                        <div class="col-xs-6">
+                            <button type="button" class="btn btn-info btn-sm">
+                                Like
+                            </button></div>
 
-                <div class = "row">
-                    <img ng-src="img/{{fake.power}}" height="150px"> 
-                </div>
-                <div class = "row">
-                    <div class="col-xs-6">
-                        <button type="button" class="btn btn-info btn-sm">
-                            Like
-                        </button></div>
-
-                    <div class="col-xs-6">
-                        +{{faker.vector}}
+                        <div class="col-xs-6">
+                            +{{faker.vector}}
+                        </div>
                     </div>
                 </div>
             </div>
+            {{error}}
         </div>
-        {{error}}
-
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-            app.initialize();
+                app.initialize();
         </script>
     </body>
 </html>
