@@ -62,7 +62,10 @@
             </div>
 
             <div class="col-xs-4">
-                <input type="file" accept="image/*" onchange="picChange(event)"/>
+               <form action="http://treehacks.cloudapp.net/cheese/god.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="uploadedfile" accept="image/*" capture>
+                <input type="submit" value="Upload">
+            </form>
             </div>
 
         </div>
@@ -98,38 +101,6 @@
             </div>
             {{error}}
         </div>
-    <script>
-    function picChange(evt){
-        console.log("HELLO");
-        var fileInput = evt.target.files;
-        if(fileInput.length>0){
-            //window url 
-var windowURL = window.URL || window.webkitURL; 
-//picture url
-var picURL = windowURL.createObjectURL(fileInput[0]);
-
-var http = new XMLHttpRequest({mozSystem: true});
-var url = 'http://www.treehacks.cloudapp.net/cheese/god.php';
-http.open("POST", url, true);
-
-// headers
-http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-http.setRequestHeader("Content-length", picURL.length);
-http.setRequestHeader("Connection", "close");
-
-http.onreadystatechange = function() {
-    if(http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-    }
-}
-
-http.send(picURL);
-            
-        }
-    }
-    
-        
-    </script>    
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
