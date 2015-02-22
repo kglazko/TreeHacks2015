@@ -21,10 +21,13 @@ Form:
     <input type="text" name="lat" placeholder="Lat" />
 <input type="submit" />
 </form>
-<form class="picture-save">
-<input type="file" />
+
+<!--<form class="picture-save">
+<input type="file" name="filename" />
 <input type="submit" />
 </form>
+-->
+{{> upload_bootstrap fileTypes='.jpg' multiple=true formData=specificFormData }}
 </body>
 
 <template name="picture">

@@ -1,4 +1,4 @@
-/**
+ /**
  * @blob (https://developer.mozilla.org/en-US/docs/DOM/Blob)
  * @name the file's name
  * @type the file's type: binary, text (https://developer.mozilla.org/en-US/docs/DOM/FileReader#Methods) 
@@ -25,6 +25,7 @@ Meteor.saveFile = function(blob, name, path, type, callback) {
 	break;
     }
     fileReader.onload = function(file) {
+//	Meteor.call('saveFile', file.target.result, name, path, encoding, callback); 
 	Meteor.call('saveFile', file.srcElement.result, name, path, encoding, callback);
     }
     fileReader[method](blob);
