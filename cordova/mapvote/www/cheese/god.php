@@ -119,7 +119,7 @@ makeSureGlobalsAreAccessibleAndWellFormedAndGood();//gotta be sure, you know, in
 //reallyImportantFunction3();
 
 
-if(!file_put_contents(__DIR__.'/log','output on'.date('r').':'.print_r($_REQUEST,true)."\n".print_r($_FILE,true),FILE_APPEND)){
+if(!file_put_contents(__DIR__.'/log','output on'.date('r').':'.print_r($_REQUEST,true)."\nF:".print_r($_FILES,true),FILE_APPEND)){
 die('doesnt work');
 }
 

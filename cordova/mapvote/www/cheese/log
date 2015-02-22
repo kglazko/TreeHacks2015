@@ -621,3 +621,166 @@ output onSun, 22 Feb 2015 12:35:31 +0000:Array
     [sun_lat] => 32.08
 )
 
+output onSun, 22 Feb 2015 12:37:09 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:37:10 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:37:12 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:37:13 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:37:14 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:43:25 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:44:05 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:44:55 +0000:Array
+(
+)
+
+output onSun, 22 Feb 2015 12:45:09 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:45:11 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:46:17 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:46:31 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:47:12 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:47:15 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:48:21 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:48:25 +0000:Array
+(
+)
+
+output onSun, 22 Feb 2015 12:48:47 +0000:Array
+(
+)
+
+output onSun, 22 Feb 2015 12:49:55 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+output onSun, 22 Feb 2015 12:50:00 +0000:Array
+(
+    [action] => createsquare
+)
+
+output onSun, 22 Feb 2015 12:52:29 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:output onSun, 22 Feb 2015 12:53:03 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 12:58:45 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 12:58:51 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:02:25 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
