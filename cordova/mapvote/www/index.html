@@ -27,28 +27,105 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
         <title>Hello World</title>
-        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-        <style>
-            body { margin:0; padding:0; }
-            #map { position:absolute; top:0; bottom:0; width:100%; }
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
+
+
+
+
+
+
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+     
+
+    <div class="row" id="header" style="background-color:#990033; color:white">
+        <div class="col-xs-8">
+        <h1 style="font-family: 'Indie Flower', cursive;">City Vote</h1>
         </div>
-        <div id='map'></div>
-        <script>
-            L.mapbox.accessToken = 'pk.eyJ1IjoidHJlZWhhY2tzIiwiYSI6IlhROGFQLW8ifQ.LNXxGQ3uFAN2OnztYwo2eQ';
-            var map = L.mapbox.map('map', 'treehacks.l9bh1gp4')
-            .setView([40, -74.50], 9);
-        </script>
+
+        <div class="col-xs-4">
+        <button id="TakePicture" style="background-color:#990033; border-color:#990033"><img src="img/camicon.png"></button>
+        </div>
+
+        </div>
+
+
+        <div class="row" id="location" style="background-color:#C26685
+; color:white">
+         <center><font style="font-family: 'Josefin Slab', serif; font-size:20px"> Palo Alto, CA</font> </center>
+        </div>
+
+   
+
+<div class="col-xs-4" style="background-color: navy; color: white">
+
+                <div class = "row">
+                <img src="img/highway.jpg" height="150px"> 
+                </div>
+
+                <div class = "row">
+                <div class="col-xs-6">
+                <button type="button" class="btn btn-info btn-sm">
+                Like
+                </button></div>
+
+                <div class="col-xs-6">
+                +129
+                </div>
+
+                </div>
+
+                </div>
+
+                <div class="col-xs-4" style="background-color: navy; color: white">
+
+                <div class = "row">
+                <img src="img/highway.jpg" height="150px"> 
+                </div>
+
+                <div class = "row">
+                <div class="col-xs-6">
+                <button type="button" class="btn btn-info btn-sm">
+                Like
+                </button></div>
+
+                <div class="col-xs-6">
+                +12
+                </div>
+
+                </div>
+
+                </div>
+
+                <div class="col-xs-4" style="background-color: navy; color: white">
+
+                <div class = "row">
+                <img src="img/highway.jpg" height="150px"> 
+                </div>
+
+                <div class = "row">
+                <div class="col-xs-6">
+                <button type="button" class="btn btn-info btn-sm">
+                Like
+                </button></div>
+
+                <div class="col-xs-6">
+                +30
+                </div>
+
+                </div>
+
+                </div>
+
+
+
+
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
