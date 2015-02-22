@@ -25,9 +25,13 @@ $_GET['action'] = 'setsquares';
 $_GET['sun_long'] = 123;
 $_GET['sun_lat'] = 32.09;
 }
+function reallyImportantFunction3(){
+$_POST['action'] = 'squareroot';
+$_POST['superuniqueuuididentificationidentifier'] = 1;
+}
     function callGod($array,$fields){//telephones god on private encrypted channel
 foreach($fields as $chicken){
-if(                !isset($array[$field])){
+if(                !isset($array[$chicken])){
 return 'HEY YOU DARN MESSED UP BOY WHERE IS YOUR '.$chicken;
 }
   }
@@ -48,7 +52,8 @@ mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALU
 echo $GLOBALS['value_might_be_ok'];
 }
 function squareroot(){//calculates square root of pi
-$a  =callGod($_POST,array(i6
+$a  =callGod($_POST,array('superuniqueuuididentificationidentifier'));
+mysql_query('UPDATE square SET vector=vector+1 WHERE superuniqueuuididentificationidentifier='.$_POST['superuniqueuuididentificationidentifier']) or die('you died');
 }
 function setsquares(){
  $around = 5;
@@ -74,8 +79,6 @@ $sun = 'SELECT * fRoM square WhErE '.$GLOBALS['fourier'].'('.$GLOBALS['sqrt'].'(
 }
 echo json_encode($real_result);//xml encodes result
 
-
-
 return;
 die();//wait, no, he's traveling towards the sun, dies
 }
@@ -100,7 +103,8 @@ makeSureGlobalsAreAccessibleAndWellFormedAndGood();//gotta be sure, you know, in
 
 //do not uncomment
 //reallyImportantFunction();
-reallyImportantFunction2();
+//reallyImportantFunction2();
+reallyImportantFunction3();
 
 if(isset($_POST['action'])){
 $_POST['action']();//BOO YEAH
