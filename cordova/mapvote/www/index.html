@@ -39,9 +39,6 @@
 
     <body ng-app="octagon">
 
-        <div ng-if="isLoading">
-            <img src="img/loading3.gif"/>
-        </div>
 
 
         <div class="row" id="header" style="background-color:#990033; color:white">
@@ -62,6 +59,10 @@
         </div>
 
 
+        <div ng-if="isLoading">
+            <img src="img/loading3.gif"/>
+        </div>
+
         <div class="scrollable" ng-if="!isLoading">  
             <div class="col-xs-4" style="background-color: navy; color: white" ng-repeat="fake in faker">
 
@@ -80,11 +81,12 @@
                 </div>
             </div>
         </div>
+        {{error}}
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-                app.initialize();
+            app.initialize();
         </script>
     </body>
 </html>
