@@ -28,27 +28,107 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
-        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-        <style>
-            body { margin:0; padding:0; }
-            #map { position:absolute; top:0; bottom:0; width:100%; }
-        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
+
+
+
+
+
+
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+     
+
+        <div class="row" id="header" style="background-color:blue; color:white">
+         <span class="glyphicon glyphicon-map-marker"></span> <h1> Palto Alto, CA</h1> 
+        </div>
+
+        <div id="camera">
+            <button class="camera-control" onclick="capturePhoto();">Capture Photo</button>
+            <div style="text-align:center;margin:20px;">
+            <img id="cameraPic" src="" style="width:auto;height:120px;"></img>
             </div>
         </div>
-        <div id='map'></div>
-        <script>
-            L.mapbox.accessToken = 'pk.eyJ1IjoidHJlZWhhY2tzIiwiYSI6IlhROGFQLW8ifQ.LNXxGQ3uFAN2OnztYwo2eQ';
-            var map = L.mapbox.map('map', 'treehacks.l9bh1gp4')
-            .setView([40, -74.50], 9);
-        </script>
+
+
+        <div class="row" id="photo_row_1">
+
+            <div class="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+            <div class ="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+            <div class ="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+        </div>
+
+
+        <div class="row" id="photo_row_2">
+
+            <div class="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+            <div class ="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+            <div class ="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+        </div>
+
+        <div class="row" id="photo_row_1">
+
+            <div class="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+            <div class ="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+            <div class ="col-xs-4">
+
+                <img src="img/highway.jpg" height="150px"> 
+
+            </div>
+
+        </div>
+
+
+
+            <div class="row">
+                <a type="btn" href="#form"> Hello! </a>
+            </div>
+        </div>
+
+
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
