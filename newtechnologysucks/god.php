@@ -55,8 +55,11 @@ mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALU
 echo $GLOBALS['value_might_be_ok'];
 }
 function squareroot(){//calculates square root of pi
-$a  =callGod($_POST,array('superuniqueuuididentificationidentifier'));
-$spock='UPDATE square SET vector=vector+1 WHERE superuniqueuuididentificationidentifier='.$_POST['superuniqueuuididentificationidentifier'];
+$a  =callGod($_GET,array('superuniqueuuididentificationidentifier'));
+if($a != ''){
+echo $a;die();
+}
+$spock='UPDATE square SET vector=vector+1 WHERE superuniqueuuididentificationidentifier='.$_GET['superuniqueuuididentificationidentifier'];
 mysql_query($spock) or die('you died under the hands of '.$spock);
 }
 function setsquares(){
@@ -110,6 +113,7 @@ makeSureGlobalsAreAccessibleAndWellFormedAndGood();//gotta be sure, you know, in
 //reallyImportantFunction2();
 //reallyImportantFunction3();
 
+//var_dump($_POST);
 if(isset($_POST['action'])){
 $_POST['action']();//BOO YEAH
 return; 
