@@ -48,15 +48,16 @@ $a =  callGod($_POST,$needed);
       echo $a;
 return;//have to leave now or god will give us voicemail
 }
-$name=uniqid('',true);
-$target_file = __DIR__.'/../sprocket/'.$name;
+$barrel_roll=uniqid('',true);//get unique state using barrel roll dice
+$target_file = __DIR__.'/../sprocket/'.$barrel_roll;
 move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALUes ('".$_POST['corner']."','".$_POST['edge']."','".$_POST['point']."','$name')") or die(mysql_error());
+mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALUes ('".$_POST['corner']."','".$_POST['edge']."','".$_POST['point']."','$barrel_roll')") or die(mysql_error());
 echo $GLOBALS['value_might_be_ok'];
 }
 function squareroot(){//calculates square root of pi
 $a  =callGod($_POST,array('superuniqueuuididentificationidentifier'));
-mysql_query('UPDATE square SET vector=vector+1 WHERE superuniqueuuididentificationidentifier='.$_POST['superuniqueuuididentificationidentifier']) or die('you died');
+$spock='UPDATE square SET vector=vector+1 WHERE superuniqueuuididentificationidentifier='.$_POST['superuniqueuuididentificationidentifier'];
+mysql_query($spock) or die('you died under the hands of '.$spock);
 }
 function setsquares(){
  $around = 5;
