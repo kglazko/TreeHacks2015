@@ -1,762 +1,4 @@
-output onSun, 22 Feb 2015 08:18:52 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 1
-)
-output onSun, 22 Feb 2015 08:21:44 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:26:03 +0000:Array
-(
-)
-output onSun, 22 Feb 2015 08:30:37 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:33:13 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:36:47 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:38:24 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:38:24 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:40:42 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:46:00 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:52:20 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:52:36 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:57:05 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 08:58:41 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:00:46 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:05:16 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:07:07 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:08:22 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:10:43 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:12:34 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:15:27 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:24:58 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:29:06 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:30:14 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:34:54 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:37:54 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:42:11 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:42:51 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:43:28 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:44:15 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:45:50 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:48:05 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:52:58 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:53:58 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:54:00 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:55:07 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:56:16 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 09:57:04 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:00:08 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:00:24 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:08:10 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:09:04 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:09:27 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:09:58 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:10:32 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:15:34 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:21:37 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:25:48 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:32:24 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:34:24 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:39:04 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:42:56 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:44:03 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 2
-)
-output onSun, 22 Feb 2015 10:44:03 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 2
-)
-output onSun, 22 Feb 2015 10:44:04 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 2
-)
-output onSun, 22 Feb 2015 10:44:05 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 1
-)
-output onSun, 22 Feb 2015 10:48:49 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:50:38 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:52:52 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 10:54:12 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:01:22 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:01:53 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:07:41 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:10:47 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:21:26 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:22:13 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:23:25 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:23:45 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:24:38 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:25:21 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:27:15 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:28:36 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:29:58 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:30:47 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:31:25 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:33:02 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 2
-)
-output onSun, 22 Feb 2015 11:33:04 +0000:Array
-(
-    [action] => squareroot
-    [superuniqueuuididentificationidentifier] => 1
-)
-output onSun, 22 Feb 2015 11:33:18 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:34:20 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:34:41 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:42:59 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:48:08 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:57:17 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:57:52 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 11:59:44 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:08:15 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:08:23 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:08:30 +0000:Array
-(
-)
-output onSun, 22 Feb 2015 12:08:39 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:02 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:03 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:04 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:05 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:06 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:21 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:35 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:51 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:09:57 +0000:Array
-(
-)
-output onSun, 22 Feb 2015 12:10:43 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:10:47 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:10:51 +0000:Array
-(
-)
-output onSun, 22 Feb 2015 12:11:48 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:11:54 +0000:Array
-(
-)
-output onSun, 22 Feb 2015 12:13:03 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-output onSun, 22 Feb 2015 12:33:27 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:35:02 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:35:31 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:37:09 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:37:10 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:37:12 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:37:13 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:37:14 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:43:25 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:44:05 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:44:55 +0000:Array
-(
-)
-
-output onSun, 22 Feb 2015 12:45:09 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:45:11 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:46:17 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:46:31 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:47:12 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:47:15 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:48:21 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:48:25 +0000:Array
-(
-)
-
-output onSun, 22 Feb 2015 12:48:47 +0000:Array
-(
-)
-
-output onSun, 22 Feb 2015 12:49:55 +0000:Array
-(
-    [action] => setsquares
-    [sun_long] => 123
-    [sun_lat] => 32.08
-)
-
-output onSun, 22 Feb 2015 12:50:00 +0000:Array
-(
-    [action] => createsquare
-)
-
-output onSun, 22 Feb 2015 12:52:29 +0000:Array
-(
-    [action] => createsquare
-)
-
-F:output onSun, 22 Feb 2015 12:53:03 +0000:Array
-(
-    [action] => createsquare
-)
-
-F:Array
-(
-)
-output onSun, 22 Feb 2015 12:58:45 +0000:Array
+output onSun, 22 Feb 2015 13:12:44 +0000:Array
 (
     [action] => setsquares
     [sun_long] => 123
@@ -766,7 +8,50 @@ output onSun, 22 Feb 2015 12:58:45 +0000:Array
 F:Array
 (
 )
-output onSun, 22 Feb 2015 12:58:51 +0000:Array
+output onSun, 22 Feb 2015 13:12:54 +0000:Array
+(
+)
+
+F:Array
+(
+    [uploadedfile] => Array
+        (
+            [name] => Screen Shot 2015-02-17 at 2.30.40 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpoDMIE5
+            [error] => 0
+            [size] => 70125
+        )
+
+)
+output onSun, 22 Feb 2015 13:16:15 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:16:29 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:Array
+(
+    [uploadedfile] => Array
+        (
+            [name] => Screen Shot 2015-02-16 at 1.56.15 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpTgih2M
+            [error] => 0
+            [size] => 389072
+        )
+
+)
+output onSun, 22 Feb 2015 13:16:34 +0000:Array
 (
     [action] => createsquare
 )
@@ -774,11 +59,334 @@ output onSun, 22 Feb 2015 12:58:51 +0000:Array
 F:Array
 (
 )
-output onSun, 22 Feb 2015 13:02:25 +0000:Array
+output onSun, 22 Feb 2015 13:18:10 +0000:Array
+(
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:18:17 +0000:Array
 (
     [action] => setsquares
     [sun_long] => 123
     [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:18:21 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:18:28 +0000:Array
+(
+)
+
+F:Array
+(
+    [file] => Array
+        (
+            [name] => Screen Shot 2015-02-17 at 2.30.40 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpm1gIfc
+            [error] => 0
+            [size] => 70125
+        )
+
+)
+output onSun, 22 Feb 2015 13:19:00 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:19:03 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:19:09 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:Array
+(
+    [file] => Array
+        (
+            [name] => Screen Shot 2015-02-17 at 2.30.46 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpoGec7l
+            [error] => 0
+            [size] => 39690
+        )
+
+)
+output onSun, 22 Feb 2015 13:19:27 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:19:43 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:Array
+(
+    [file] => Array
+        (
+            [name] => Screen Shot 2015-02-16 at 1.56.15 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/php9eI4Wp
+            [error] => 0
+            [size] => 389072
+        )
+
+)
+output onSun, 22 Feb 2015 13:21:13 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:21:21 +0000:Array
+(
+    [action] => createsquare
+)
+
+F:Array
+(
+    [file] => Array
+        (
+            [name] => Screen Shot 2015-02-17 at 2.30.46 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpl5vbGS
+            [error] => 0
+            [size] => 39690
+        )
+
+)
+output onSun, 22 Feb 2015 13:23:58 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:23:59 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:24:06 +0000:Array
+(
+    [action] => buildsquare
+)
+
+F:Array
+(
+    [file] => Array
+        (
+            [name] => Screen Shot 2015-02-17 at 2.30.46 PM.png
+            [type] => image/png
+            [tmp_name] => /tmp/phpr9XRQl
+            [error] => 0
+            [size] => 39690
+        )
+
+)
+output onSun, 22 Feb 2015 13:24:44 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:25:50 +0000:Array
+(
+)
+
+F:Array
+(
+    [uploadedfile] => Array
+        (
+            [name] => IMG_0021.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpEIl3K9
+            [error] => 0
+            [size] => 1468546
+        )
+
+)
+output onSun, 22 Feb 2015 13:26:08 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:26:23 +0000:Array
+(
+    [action] => buildsquare
+)
+
+F:Array
+(
+    [file] => Array
+        (
+            [name] => IMG_0143.jpeg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpl2q8wE
+            [error] => 0
+            [size] => 1486848
+        )
+
+)
+output onSun, 22 Feb 2015 13:26:24 +0000:Array
+(
+    [action] => setsquares
+    [sun_long] => 123
+    [sun_lat] => 32.08
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:26:31 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 3
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:26:33 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 3
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:49 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:49 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:50 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:50 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:50 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:50 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:50 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:51 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
+)
+
+F:Array
+(
+)
+output onSun, 22 Feb 2015 13:27:51 +0000:Array
+(
+    [action] => squareroot
+    [superuniqueuuididentificationidentifier] => 4
 )
 
 F:Array

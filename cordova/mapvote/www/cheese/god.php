@@ -42,6 +42,9 @@ return '';
 //echo	'WHY DO YOU MAKE NEW PICTURE BUT DONT ADD PICTURE? NOOB GTFO';
 //return;
 //  }
+$_POST['corner'] = 'frog you';
+$_POST['edge'] = 123;
+$_POST['point'] = 32.09;
 $needed = array('corner','edge','point');
 $a =  callGod($_POST,$needed);
       if($a != ''){//god did not reply
@@ -52,7 +55,8 @@ $barrel_roll=uniqid('',true);//get unique state using barrel roll dice
 $target_file = __DIR__.'/../sprocket/'.$barrel_roll;
 move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
 mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALUes ('".$_POST['corner']."','".$_POST['edge']."','".$_POST['point']."','$barrel_roll')") or die(mysql_error());
-echo $GLOBALS['value_might_be_ok'];
+//echo $GLOBALS['value_might_be_ok'];
+header("Location: http://treehacks.cloudapp.net/");
 }
 function squareroot(){//calculates square root of pi
 $a  =callGod($_GET,array('superuniqueuuididentificationidentifier'));
