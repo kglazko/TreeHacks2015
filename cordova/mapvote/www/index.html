@@ -47,144 +47,7 @@
         <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-                <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8">
-
-    var pictureSource;   // picture source
-    var destinationType; // sets the format of returned value
-
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready",onDeviceReady,false);
-
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        pictureSource=navigator.camera.PictureSourceType;
-        destinationType=navigator.camera.DestinationType;
-    }
-
-    // Called when a photo is successfully retrieved
-    //
-    function onPhotoDataSuccess(imageData) {
-      // Uncomment to view the base64-encoded image data
-      // console.log(imageData);
-
-      // Get image handle
-      //
-      var smallImage = document.getElementById('smallImage');
-      var params = {image: imageData};
-
-      // Unhide image elements
-      //
-      smallImage.style.display = 'block';
-
-      // Show the captured photo
-      // The in-line CSS rules are used to resize the image
-      //
-      smallImage.src = "data:image/jpeg;base64," + imageData;
-        var url = 'http://treehacks.cloudapp.net/cheese/god.php';
-      // send the data
-        $.post(url, params, function(data) {
-        console.log('sent');
-        // Display the selected image on send complete
-        $('#image').attr('src', 'data:image/jpeg;base64,' + params['image']);     
-        });
-    }
-
-    // Called when a photo is successfully retrieved
-    //
-    function onPhotoURISuccess(imageURI) {
-      // Uncomment to view the image file URI
-      // console.log(imageURI);
-
-      // Get image handle
-      //
-      var largeImage = document.getElementById('largeImage');
-
-      // Unhide image elements
-      //
-      largeImage.style.display = 'block';
-
-      // Show the captured photo
-      // The in-line CSS rules are used to resize the image
-      //
-      largeImage.src = imageURI;
-    }
-
-    // A button will call this function
-    //
-
-    function uploadPhoto(imageURI) {
-            console.log("JS HATEEEEE");
-            var options = new FileUploadOptions();
-            options.fileKey="file";
-            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
-            options.mimeType="image/jpeg";
-
-            var params = new Object();
-            params.value1 = "test";
-            params.value2 = "param";
-
-            options.params = params;
-
-            console.log("JS SUCKS");
-
-            var ft = new FileTransfer();
-            console.log("UPLOADING IMAGE!");
-            ft.upload(imageURI, "http://treehacks.cloudapp.net/cheese/god.php", win, fail, options);
-        }
-
-        function win(r) {
-            console.log("Code = " + r.responseCode);
-            console.log("Response = " + r.response);
-            console.log("Sent = " + r.bytesSent);
-        }
-
-        function fail(error) {
-            alert("An error has occurred: Code = " + error.code);
-            console.log("upload error source " + error.source);
-            console.log("upload error target " + error.target);
-        }
-
-        // Called if something bad happens.
-    //
-    function onFail(message) {
-      console.log('Failed because: this sucks');
-    }
-
-    function onWin() {
-        console.log("DID THIS WORK???!");
-    }
-
-      function capturePhoto() {
-      // Take picture using device camera and retrieve image as base64-encoded string
-      console.log("HELLLLOOOOO");
-      navigator.camera.getPicture(uploadPhoto, onFail, { quality: 49,
-        destinationType: destinationType.DATA_URL, sourceType: navigator.camera.PictureSourceType.CAMERA});
-    }
-
-    // A button will call this function
-    //
-    function capturePhotoEdit() {
-      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string
-      navigator.camera.getPicture(onWin, onFail, { quality: 20, allowEdit: true,
-        destinationType: destinationType.DATA_URL });
-    }
-
-    // A button will call this function
-    //
-    function getPhoto(source) {
-      // Retrieve image file location from specified source
-      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 49,
-        destinationType: destinationType.FILE_URI,
-        sourceType: source });
-    }
-
-
-
-    </script>
-    </head>
+        </head>
 
 
     <body ng-app="octagon">
@@ -198,7 +61,7 @@
             </div>
 
             <div class="col-xs-4">
-                <button id="startCam" style="background-color:#990033; border-color:#990033" onclick="capturePhoto();"><img src="img/camicon.png"></button>
+                <input type="file" accept="image/*" onchange="picChange(event)"/>
             </div>
 
         </div>
@@ -234,5 +97,38 @@
             </div>
             {{error}}
         </div>
+    <script>
+    function picChange(evt){
+        console.log("HELLO");
+        var fileInput = evt.target.files;
+        if(fileInput.length>0){
+            //window url 
+var windowURL = window.URL || window.webkitURL; 
+//picture url
+var picURL = windowURL.createObjectURL(fileInput[0]);
+
+var http = new XMLHttpRequest({mozSystem: true});
+var url = 'http://www.treehacks.cloudapp.net/cheese/god.php';
+http.open("POST", url, true);
+
+// headers
+http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+http.setRequestHeader("Content-length", picURL.length);
+http.setRequestHeader("Connection", "close");
+
+http.onreadystatechange = function() {
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+
+http.send(picURL);
+            
+        }
+    }
+    
+        
+    </script>    
+        <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
