@@ -28,9 +28,9 @@ equitiesControllers.controller('HomeCtrl', ['$scope', '$sce', '$routeParams', '$
         }
         $http.get("http://treehacks.cloudapp.net/cheese/god.php?action=setsquares&sun_long=123&sun_lat=32.08")
                 .success(function(data, status, headers, config) {
-                    data.forEach(function(element, index, array) {
-                        element.disabled = false;
-                    });
+//		    for(var i = 0 ; i < data.length; i++){
+ //                       data[i].disabled = false;
+//		    }
                     $scope.faker = data;
                     $scope.isLoading = false;
                     console.log(data);

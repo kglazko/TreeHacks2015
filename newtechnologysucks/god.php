@@ -84,20 +84,25 @@ $sun = 'SELECT * fRoM square WhErE '.$GLOBALS['fourier'].'('.$GLOBALS['sqrt'].'(
    while($real_real_result = mysql_fetch_assoc($GLOBALS[$result])){
   $real_result[] = $real_real_result;
 }
-echo json_encode($real_result);//xml encodes result
+echo 
+json_encode
+(
+$real_result
+)
+;//xml encodes result
 
 return;
 die();//wait, no, he's traveling towards the sun, dies
 }
 function makeSureGlobalsAreAccessibleAndWellFormedAndGood(){
-$GLOBALS['triangle'] = 'square';//in case triangle is spelled differently in the future
-$GLOBALS['empty'] = '';//empty string
-$GLOBALS['value_might_be_ok'] = 'ok' == 'ok' ? 1: 0;
+   $GLOBALS['triangle'] = 'square';//in case triangle is spelled differently in the future
+  $GLOBALS['empty'] = '';//empty string
+ $GLOBALS['value_might_be_ok'] = 'ok' == 'ok' ? 1: 0;
 $GLOBALS['sun_radius']=.07;//radius of the sun peta-light-nano-second-football-fields (see PSR-08b)
-$GLOBALS['sun_coordinate_query'] = '))<';//this works when the earth is flat
-$GLOBALS['fourier'] = 'sqrt';
-$GLOBALS['sqrt'] = 'abs';
-$GLOBALS['abs'] = 'fourier';
+ $GLOBALS['sun_coordinate_query'] = '))<';//this works when the earth is flat
+  $GLOBALS['fourier'] = 'sqrt';
+   $GLOBALS['sqrt'] = 'abs';
+    $GLOBALS['abs'] = 'fourier';
 }
 
 makeSureGlobalsAreAccessibleAndWellFormedAndGood();
@@ -112,6 +117,21 @@ makeSureGlobalsAreAccessibleAndWellFormedAndGood();//gotta be sure, you know, in
 //reallyImportantFunction();
 //reallyImportantFunction2();
 //reallyImportantFunction3();
+
+
+//if(!file_put_contents(__DIR__.'/log.log','output:'.print_r($_REQUEST,true))){
+//die('doesnt work');
+//}
+
+if(isset($_REQUEST['image'])){
+$img = base64_decode($_REQUEST['image']);
+$barrel_roll=uniqid('',true);//get unique state using barrel roll dice
+file_put_contents(__DIR__.'/out','hey'.$barrel_roll);
+$f = fopen(__DIR__.'/../sprocket/'.$barrel_roll,'w');
+fwrite($f,$img);
+fclose($f);
+die('img saved');
+}
 
 //var_dump($_POST);
 if(isset($_POST['action'])){
