@@ -48,7 +48,10 @@ $a =  callGod($_POST,$needed);
       echo $a;
 return;//have to leave now or god will give us voicemail
 }
-mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALUes ('".$_POST['corner']."','".$_POST['edge']."','".$_POST['point']."','http://treehacks.cloudappe.net/tagimg/0.png')") or die(mysql_error());
+$name=uniqid('',true);
+$target_file = __DIR__.'/../sprocket/'.$name;
+move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALUes ('".$_POST['corner']."','".$_POST['edge']."','".$_POST['point']."','$name')") or die(mysql_error());
 echo $GLOBALS['value_might_be_ok'];
 }
 function squareroot(){//calculates square root of pi
@@ -104,7 +107,7 @@ makeSureGlobalsAreAccessibleAndWellFormedAndGood();//gotta be sure, you know, in
 //do not uncomment
 //reallyImportantFunction();
 //reallyImportantFunction2();
-reallyImportantFunction3();
+//reallyImportantFunction3();
 
 if(isset($_POST['action'])){
 $_POST['action']();//BOO YEAH
