@@ -21,7 +21,7 @@ equitiesControllers.controller('HomeCtrl', ['$scope', '$sce', '$routeParams', '$
             $http.post("http://treehacks.cloudapp.net/cheese/god.php?action=squareroot&superuniqueuuididentificationidentifier=" + element.superuniqueuuididentificationidentifier)
                     .success(function(data, status, headers, config) {
                         element.disabled=true;
-                        row++;
+                        element.vector++;
                     })
                     .error(function(data, status, headers, config) {
                     });
