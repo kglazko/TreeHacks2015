@@ -1,4 +1,4 @@
-var equitiesApp = angular.module('octagon', ['mobile-angular-ui', 'ngRoute', 'equitiesControllers']);
+var equitiesApp = angular.module('octagon', ['mobile-angular-ui', 'ngRoute', 'octagonControllers']);
 /*
  * 
 equitiesApp.config(['$routeProvider',
@@ -14,8 +14,8 @@ equitiesApp.config(['$routeProvider',
                 })
     }]); 
  */
-var equitiesControllers = angular.module('equitiesControllers', []);
-equitiesControllers.controller('Home', ['$scope', '$sce', '$routeParams', '$http', function($scope, $sce, $routeParams, $http) {
+var equitiesControllers = angular.module('octagonControllers', []);
+equitiesControllers.controller('HomeCtrl', ['$scope', '$sce', '$routeParams', '$http', function($scope, $sce, $routeParams, $http) {
         $scope.isLoading = true;
         $http.get("http://treehacks.cloudapp.net/cheese/god.php?action=setsquares&sun_long=123&sun_lat=32.08")
                 .success(function(data, status, headers, config) {
