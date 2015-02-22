@@ -7,5 +7,11 @@
 meteor-platform
 autopublish
 insecure
+<<<<<<< Updated upstream
 tomi:upload-server
 tomi:upload-jquery
+=======
+pauloborges:mapbox@2.1.4_3
+trepafi:mapbox
+mizzao:bootstrap-3
+>>>>>>> Stashed changes
