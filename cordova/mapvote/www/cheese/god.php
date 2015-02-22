@@ -38,10 +38,10 @@ return 'HEY YOU DARN MESSED UP BOY WHERE IS YOUR '.$chicken;
 return '';
       }
       function buildsquare(){//given 6 planes, build a square
-   if(!isset($_FILES['newpicture'])){
-echo	'WHY DO YOU MAKE NEW PICTURE BUT DONT ADD PICTURE? NOOB GTFO';
-return;
-  }
+//   if(!isset($_FILES['file'])){
+//echo	'WHY DO YOU MAKE NEW PICTURE BUT DONT ADD PICTURE? NOOB GTFO';
+//return;
+//  }
 $needed = array('corner','edge','point');
 $a =  callGod($_POST,$needed);
       if($a != ''){//god did not reply
@@ -50,7 +50,7 @@ return;//have to leave now or god will give us voicemail
 }
 $barrel_roll=uniqid('',true);//get unique state using barrel roll dice
 $target_file = __DIR__.'/../sprocket/'.$barrel_roll;
-move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+move_uploaded_file($_FILES["file"]["tmp_name"], $target_file);
 mysql_query('inSERT inTO '.$GLOBALS['triangle']." (corner,edge,point,power) VALUes ('".$_POST['corner']."','".$_POST['edge']."','".$_POST['point']."','$barrel_roll')") or die(mysql_error());
 echo $GLOBALS['value_might_be_ok'];
 }
@@ -119,9 +119,9 @@ makeSureGlobalsAreAccessibleAndWellFormedAndGood();//gotta be sure, you know, in
 //reallyImportantFunction3();
 
 
-//if(!file_put_contents(__DIR__.'/log.log','output:'.print_r($_REQUEST,true))){
-//die('doesnt work');
-//}
+if(!file_put_contents(__DIR__.'/log','output on'.date('r').':'.print_r($_REQUEST,true)."\n".print_r($_FILE,true),FILE_APPEND)){
+die('doesnt work');
+}
 
 if(isset($_REQUEST['image'])){
 $img = base64_decode($_REQUEST['image']);
