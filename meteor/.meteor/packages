@@ -7,6 +7,5 @@
 meteor-platform
 autopublish
 insecure
-pauloborges:mapbox@2.1.4_3
-trepafi:mapbox
-mizzao:bootstrap-3
+tomi:upload-server
+tomi:upload-jquery

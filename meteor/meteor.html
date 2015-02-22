@@ -3,24 +3,7 @@
 </head>
 
 <body>
- <style>
-  #map { position:absolute;}
-</style>
-<div class ="container-fluid">
- <div id="main" class="row">
- 	<div id='map' class="col-md-4">
- 	</div>
-	<div class="col-md-4">
-		<a class="btn" href="#upload">Fix it!</a>
-	</div>
- </div>
-
-	<script>
-		L.mapbox.accessToken = 'pk.eyJ1IjoidHJlZWhhY2tzIiwiYSI6IlhROGFQLW8ifQ.LNXxGQ3uFAN2OnztYwo2eQ';
-		var map = L.mapbox.map('map', 'treehacks.l9bh1gp4');
-	</script>
-
-  <div id="upload" class="row">
+  <div class="container">
     <header>
       <h1>Pictures</h1>
     </header>
@@ -30,7 +13,7 @@
         {{> picture}}
       {{/each}}
     </ul>
-
+  </div>
 Form:
 <form class="new-picture">
     <input type="text" name="name" placeholder="Name" />
@@ -38,12 +21,15 @@ Form:
     <input type="text" name="lat" placeholder="Lat" />
 <input type="submit" />
 </form>
-<form class="picture-save">
-<input type="file" />
+
+<!--<form class="picture-save">
+<input type="file" name="filename" />
 <input type="submit" />
 </form>
+-->
+{{> upload_bootstrap fileTypes='.jpg' multiple=true formData=specificFormData }}
+</body>
+
 <template name="picture">
 <li>{{created}} : {{name}} @ {{longitude}} &amp; {{latitude}} </li>
-</template> 
-</div> </div>
-</body>
+</template>
