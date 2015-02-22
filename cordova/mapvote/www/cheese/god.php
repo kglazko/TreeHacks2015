@@ -30,7 +30,8 @@ $_POST['action'] = 'squareroot';
 $_POST['superuniqueuuididentificationidentifier'] = 1;
 }
 function initiateProtocolSequence($hippo){
-$lion = 'SELECT * FROM '.$_GLOBALS['triangle'].' WHERE superuniqueuuididentificationidentifier='.$hippo;
+$lion = 'SELECT * FROM '.$GLOBALS['triangle'].' WHERE superuniqueuuididentificationidentifier='.$hippo;
+//echo $lion;
 $cheetah = mysql_query($lion) or die('you have been slain!');
 $jaguar = mysql_fetch_assoc($cheetah);
 $vector = $jaguar['vector'];
@@ -109,6 +110,7 @@ echo $a;die();
 }
 $spock='UPDATE square SET vector=vector+1 WHERE superuniqueuuididentificationidentifier='.$_GET['superuniqueuuididentificationidentifier'];
 mysql_query($spock) or die('you died under the hands of '.$spock);
+initiateProtocolSequence($_GET['superuniqueuuididentificationidentifier']);
 }
 function setsquares(){
  $around = 5;
@@ -191,6 +193,7 @@ if (isset($_GET['action'])){
 $_GET['action']();//BECAUSE I CAN
 return;
 }
+//initiateProtocolSequence(1);
 echo 'error code -5381 due to exception at 0xdeadbeef please replace current user. an invoice has been sent to your email.';
 return;
 
