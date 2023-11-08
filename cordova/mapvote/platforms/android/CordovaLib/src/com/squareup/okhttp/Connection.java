@@ -23,6 +23,8 @@ import com.squareup.okhttp.internal.http.HttpTransport;
 import com.squareup.okhttp.internal.http.RawHeaders;
 import com.squareup.okhttp.internal.http.SpdyTransport;
 import com.squareup.okhttp.internal.spdy.SpdyConnection;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.Closeable;
@@ -312,7 +314,7 @@ public final class Connection implements Closeable {
           return;
         case HTTP_PROXY_AUTH:
           requestHeaders = new RawHeaders(requestHeaders);
-          URL url = new URL("https", tunnelRequest.host, tunnelRequest.port, "/");
+          URL url = Urls.create("https", tunnelRequest.host, tunnelRequest.port, "/", Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
           boolean credentialsFound = HttpAuthenticator.processAuthHeader(
               route.address.authenticator, HTTP_PROXY_AUTH, responseHeaders, requestHeaders,
               route.proxy, url);
