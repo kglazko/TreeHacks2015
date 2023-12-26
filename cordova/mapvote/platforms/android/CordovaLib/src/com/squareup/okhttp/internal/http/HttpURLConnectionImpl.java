@@ -251,10 +251,10 @@ public class HttpURLConnectionImpl extends HttpURLConnection implements Policy {
     connected = true;
     try {
       if (doOutput) {
-        if (method.equals("GET")) {
+        if ("GET".equals(method)) {
           // they are requesting a stream to write to. This implies a POST method
           method = "POST";
-        } else if (!method.equals("POST") && !method.equals("PUT") && !method.equals("PATCH")) {
+        } else if (!"POST".equals(method) && !"PUT".equals(method) && !"PATCH".equals(method)) {
           // If the request method is neither POST nor PUT nor PATCH, then you're not writing
           throw new ProtocolException(method + " does not support writing");
         }
@@ -272,9 +272,9 @@ public class HttpURLConnectionImpl extends HttpURLConnection implements Policy {
 
   private HttpEngine newHttpEngine(String method, RawHeaders requestHeaders,
       Connection connection, RetryableOutputStream requestBody) throws IOException {
-    if (url.getProtocol().equals("http")) {
+    if ("http".equals(url.getProtocol())) {
       return new HttpEngine(client, this, method, requestHeaders, connection, requestBody);
-    } else if (url.getProtocol().equals("https")) {
+    } else if ("https".equals(url.getProtocol())) {
       return new HttpsEngine(client, this, method, requestHeaders, connection, requestBody);
     } else {
       throw new AssertionError();
@@ -443,7 +443,7 @@ public class HttpURLConnectionImpl extends HttpURLConnection implements Policy {
         if (++redirectionCount > MAX_REDIRECTS) {
           throw new ProtocolException("Too many redirects: " + redirectionCount);
         }
-        if (responseCode == HTTP_TEMP_REDIRECT && !method.equals("GET") && !method.equals("HEAD")) {
+        if (responseCode == HTTP_TEMP_REDIRECT && !"GET".equals(method) && !"HEAD".equals(method)) {
           // "If the 307 status code is received in response to a request other than GET or HEAD,
           // the user agent MUST NOT automatically redirect the request"
           return Retry.NONE;
@@ -454,7 +454,7 @@ public class HttpURLConnectionImpl extends HttpURLConnection implements Policy {
         }
         URL previousUrl = url;
         url = new URL(previousUrl, location);
-        if (!url.getProtocol().equals("https") && !url.getProtocol().equals("http")) {
+        if (!"https".equals(url.getProtocol()) && !"http".equals(url.getProtocol())) {
           return Retry.NONE; // Don't follow redirects to unsupported protocols.
         }
         boolean sameProtocol = previousUrl.getProtocol().equals(url.getProtocol());

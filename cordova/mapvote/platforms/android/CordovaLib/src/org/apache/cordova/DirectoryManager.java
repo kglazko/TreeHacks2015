@@ -45,7 +45,7 @@ public class DirectoryManager {
         boolean status;
 
         // If SD card exists
-        if ((testSaveLocationExists()) && (!name.equals(""))) {
+        if ((testSaveLocationExists()) && (!"".equals(name))) {
             File path = Environment.getExternalStorageDirectory();
             File newPath = constructFilePaths(path.toString(), name);
             status = newPath.exists();
