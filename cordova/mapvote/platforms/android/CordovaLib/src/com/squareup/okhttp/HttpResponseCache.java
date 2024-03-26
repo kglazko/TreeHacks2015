@@ -209,7 +209,7 @@ public final class HttpResponseCache extends ResponseCache {
     if (maybeRemove(requestMethod, uri)) {
       return null;
     }
-    if (!requestMethod.equals("GET")) {
+    if (!"GET".equals(requestMethod)) {
       // Don't cache non-GET responses. We're technically allowed to cache
       // HEAD requests and some POST requests, but the complexity of doing
       // so is high and the benefit is low.
@@ -249,8 +249,8 @@ public final class HttpResponseCache extends ResponseCache {
    * cache.
    */
   private boolean maybeRemove(String requestMethod, URI uri) {
-    if (requestMethod.equals("POST") || requestMethod.equals("PUT") || requestMethod.equals(
-        "DELETE")) {
+    if ("POST".equals(requestMethod) || "PUT".equals(requestMethod) || "DELETE".equals
+        (requestMethod)) {
       try {
         cache.remove(uriToKey(uri));
       } catch (IOException ignored) {

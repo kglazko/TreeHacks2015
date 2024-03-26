@@ -337,7 +337,7 @@ public class CordovaWebView extends WebView {
      */
     @Override
     public void loadUrl(String url) {
-        if (url.equals("about:blank") || url.startsWith("javascript:")) {
+        if ("about:blank".equals(url) || url.startsWith("javascript:")) {
             this.loadUrlNow(url);
         }
         else {

@@ -105,7 +105,7 @@ public final class RouteSelector {
   public Connection next(String method) throws IOException {
     // Always prefer pooled connections over new connections.
     for (Connection pooled; (pooled = pool.get(address)) != null; ) {
-      if (method.equals("GET") || pooled.isReadable()) return pooled;
+      if ("GET".equals(method) || pooled.isReadable()) return pooled;
       pooled.close();
     }
 

@@ -128,36 +128,36 @@ public class CordovaPreferences {
             if (value == null) {
                 continue;
             }
-            if (name.equals("loglevel")) {
+            if ("loglevel".equals(name)) {
                 LOG.setLogLevel(value);
-            } else if (name.equals("splashscreen")) {
+            } else if ("splashscreen".equals(name)) {
                 // Note: We should probably pass in the classname for the variable splash on splashscreen!
                 int resource = action.getResources().getIdentifier(value, "drawable", action.getClass().getPackage().getName());
                 action.getIntent().putExtra(name, resource);
             }
-            else if(name.equals("backgroundcolor")) {
+            else if("backgroundcolor".equals(name)) {
                 int asInt = (int)(long)Long.decode(value);
                 action.getIntent().putExtra(name, asInt);
             }
-            else if(name.equals("loadurltimeoutvalue")) {
+            else if("loadurltimeoutvalue".equals(name)) {
                 int asInt = Integer.decode(value);
                 action.getIntent().putExtra(name, asInt);
             }
-            else if(name.equals("splashscreendelay")) {
+            else if("splashscreendelay".equals(name)) {
                 int asInt = Integer.decode(value);
                 action.getIntent().putExtra(name, asInt);
             }
-            else if(name.equals("keeprunning"))
+            else if("keeprunning".equals(name))
             {
                 boolean asBool = Boolean.parseBoolean(value);
                 action.getIntent().putExtra(name, asBool);
             }
-            else if(name.equals("inappbrowserstorageenabled"))
+            else if("inappbrowserstorageenabled".equals(name))
             {
                 boolean asBool = Boolean.parseBoolean(value);
                 action.getIntent().putExtra(name, asBool);
             }
-            else if(name.equals("disallowoverscroll"))
+            else if("disallowoverscroll".equals(name))
             {
                 boolean asBool = Boolean.parseBoolean(value);
                 action.getIntent().putExtra(name, asBool);

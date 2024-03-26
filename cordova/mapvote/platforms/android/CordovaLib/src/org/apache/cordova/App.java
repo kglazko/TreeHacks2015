@@ -66,10 +66,10 @@ public class App extends CordovaPlugin {
         String result = "";
 
         try {
-            if (action.equals("clearCache")) {
+            if ("clearCache".equals(action)) {
                 this.clearCache();
             }
-            else if (action.equals("show")) {
+            else if ("show".equals(action)) {
                 // This gets called from JavaScript onCordovaReady to show the webview.
                 // I recommend we change the name of the Message as spinner/stop is not
                 // indicative of what this actually does (shows the webview).
@@ -79,25 +79,25 @@ public class App extends CordovaPlugin {
                     }
                 });
             }
-            else if (action.equals("loadUrl")) {
+            else if ("loadUrl".equals(action)) {
                 this.loadUrl(args.getString(0), args.optJSONObject(1));
             }
-            else if (action.equals("cancelLoadUrl")) {
+            else if ("cancelLoadUrl".equals(action)) {
                 //this.cancelLoadUrl();
             }
-            else if (action.equals("clearHistory")) {
+            else if ("clearHistory".equals(action)) {
                 this.clearHistory();
             }
-            else if (action.equals("backHistory")) {
+            else if ("backHistory".equals(action)) {
                 this.backHistory();
             }
-            else if (action.equals("overrideButton")) {
+            else if ("overrideButton".equals(action)) {
                 this.overrideButton(args.getString(0), args.getBoolean(1));
             }
-            else if (action.equals("overrideBackbutton")) {
+            else if ("overrideBackbutton".equals(action)) {
                 this.overrideBackbutton(args.getBoolean(0));
             }
-            else if (action.equals("exitApp")) {
+            else if ("exitApp".equals(action)) {
                 this.exitApp();
             }
             callbackContext.sendPluginResult(new PluginResult(status, result));
@@ -142,13 +142,13 @@ public class App extends CordovaPlugin {
             JSONArray keys = props.names();
             for (int i = 0; i < keys.length(); i++) {
                 String key = keys.getString(i);
-                if (key.equals("wait")) {
+                if ("wait".equals(key)) {
                     wait = props.getInt(key);
                 }
-                else if (key.equalsIgnoreCase("openexternal")) {
+                else if ("openexternal".equalsIgnoreCase(key)) {
                     openExternal = props.getBoolean(key);
                 }
-                else if (key.equalsIgnoreCase("clearhistory")) {
+                else if ("clearhistory".equalsIgnoreCase(key)) {
                     clearHistory = props.getBoolean(key);
                 }
                 else {
@@ -226,10 +226,10 @@ public class App extends CordovaPlugin {
      */
     public void overrideButton(String button, boolean override) {
         LOG.i("App", "WARNING: Volume Button Default Behavior will be overridden.  The volume event will be fired!");
-        if (button.equals("volumeup")) {
+        if ("volumeup".equals(button)) {
             webView.setButtonPlumbedToJs(KeyEvent.KEYCODE_VOLUME_UP, override);
         }
-        else if (button.equals("volumedown")) {
+        else if ("volumedown".equals(button)) {
             webView.setButtonPlumbedToJs(KeyEvent.KEYCODE_VOLUME_DOWN, override);
         }
     }

@@ -280,7 +280,7 @@ public class HttpEngine {
       }
       SSLSocketFactory sslSocketFactory = null;
       HostnameVerifier hostnameVerifier = null;
-      if (uri.getScheme().equalsIgnoreCase("https")) {
+      if ("https".equalsIgnoreCase(uri.getScheme())) {
         sslSocketFactory = client.getSslSocketFactory();
         hostnameVerifier = client.getHostnameVerifier();
       }
@@ -339,7 +339,7 @@ public class HttpEngine {
   }
 
   boolean hasRequestBody() {
-    return method.equals("POST") || method.equals("PUT") || method.equals("PATCH");
+    return "POST".equals(method) || "PUT".equals(method) || "PATCH".equals(method);
   }
 
   /** Returns the request body or null if this request doesn't have a body. */
@@ -479,7 +479,7 @@ public class HttpEngine {
     int responseCode = responseHeaders.getHeaders().getResponseCode();
 
     // HEAD requests never yield a body regardless of the response headers.
-    if (method.equals("HEAD")) {
+    if ("HEAD".equals(method)) {
       return false;
     }
 

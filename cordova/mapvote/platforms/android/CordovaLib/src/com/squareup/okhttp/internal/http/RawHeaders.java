@@ -385,11 +385,11 @@ public final class RawHeaders {
       String value = namesAndValues.get(i + 1);
 
       // Drop headers that are forbidden when layering HTTP over SPDY.
-      if (name.equals("connection")
-          || name.equals("host")
-          || name.equals("keep-alive")
-          || name.equals("proxy-connection")
-          || name.equals("transfer-encoding")) {
+      if ("connection".equals(name)
+          || "host".equals(name)
+          || "keep-alive".equals(name)
+          || "proxy-connection".equals(name)
+          || "transfer-encoding".equals(name)) {
         continue;
       }
 
