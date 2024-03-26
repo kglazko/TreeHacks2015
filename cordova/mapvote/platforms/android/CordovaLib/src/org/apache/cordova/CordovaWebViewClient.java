@@ -206,7 +206,7 @@ public class CordovaWebViewClient extends WebViewClient {
         }
 
         // Shutdown if blank loaded
-        if (url.equals("about:blank")) {
+        if ("about:blank".equals(url)) {
             appView.postMessage("exit", null);
         }
     }

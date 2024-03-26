@@ -136,7 +136,7 @@ public class FileHelper {
         }
         // Convert the URI string to lower case to ensure compatibility with MimeTypeMap (see CB-2185).
         extension = extension.toLowerCase(Locale.getDefault());
-        if (extension.equals("3ga")) {
+        if ("3ga".equals(extension)) {
             return "audio/3gpp";
         }
         return MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);

@@ -344,14 +344,14 @@ public class Platform {
       if (args == null) {
         args = Util.EMPTY_STRING_ARRAY;
       }
-      if (methodName.equals("supports") && boolean.class == returnType) {
+      if ("supports".equals(methodName) && boolean.class == returnType) {
         return true;
-      } else if (methodName.equals("unsupported") && void.class == returnType) {
+      } else if ("unsupported".equals(methodName) && void.class == returnType) {
         this.unsupported = true;
         return null;
-      } else if (methodName.equals("protocols") && args.length == 0) {
+      } else if ("protocols".equals(methodName) && args.length == 0) {
         return protocols;
-      } else if (methodName.equals("selectProtocol")
+      } else if ("selectProtocol".equals(methodName)
           && String.class == returnType
           && args.length == 1
           && (args[0] == null || args[0] instanceof List)) {
@@ -359,7 +359,7 @@ public class Platform {
         List<?> serverProtocols = (List) args[0];
         this.selected = protocols.get(0);
         return selected;
-      } else if (methodName.equals("protocolSelected") && args.length == 1) {
+      } else if ("protocolSelected".equals(methodName) && args.length == 1) {
         this.selected = (String) args[0];
         return null;
       } else {

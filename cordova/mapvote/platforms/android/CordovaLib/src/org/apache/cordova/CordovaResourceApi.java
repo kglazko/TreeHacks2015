@@ -210,9 +210,9 @@ public class CordovaResourceApi {
         }
         // Convert the URI string to lower case to ensure compatibility with MimeTypeMap (see CB-2185).
         extension = extension.toLowerCase(Locale.getDefault());
-        if (extension.equals("3ga")) {
+        if ("3ga".equals(extension)) {
             return "audio/3gpp";
-        } else if (extension.equals("js")) {
+        } else if ("js".equals(extension)) {
             // Missing from the map :(.
             return "text/javascript";
         }

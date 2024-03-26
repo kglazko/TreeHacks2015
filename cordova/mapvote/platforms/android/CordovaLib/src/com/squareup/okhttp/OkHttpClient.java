@@ -344,8 +344,8 @@ public final class OkHttpClient implements URLStreamHandlerFactory {
     OkHttpClient copy = copyWithDefaults();
     copy.proxy = proxy;
 
-    if (protocol.equals("http")) return new HttpURLConnectionImpl(url, copy);
-    if (protocol.equals("https")) return new HttpsURLConnectionImpl(url, copy);
+    if ("http".equals(protocol)) return new HttpURLConnectionImpl(url, copy);
+    if ("https".equals(protocol)) return new HttpsURLConnectionImpl(url, copy);
     throw new IllegalArgumentException("Unexpected protocol: " + protocol);
   }
 
@@ -387,7 +387,7 @@ public final class OkHttpClient implements URLStreamHandlerFactory {
    * }</pre>
    */
   public URLStreamHandler createURLStreamHandler(final String protocol) {
-    if (!protocol.equals("http") && !protocol.equals("https")) return null;
+    if (!"http".equals(protocol) && !"https".equals(protocol)) return null;
 
     return new URLStreamHandler() {
       @Override protected URLConnection openConnection(URL url) {
@@ -399,8 +399,8 @@ public final class OkHttpClient implements URLStreamHandlerFactory {
       }
 
       @Override protected int getDefaultPort() {
-        if (protocol.equals("http")) return 80;
-        if (protocol.equals("https")) return 443;
+        if ("http".equals(protocol)) return 80;
+        if ("https".equals(protocol)) return 443;
         throw new AssertionError();
       }
     };

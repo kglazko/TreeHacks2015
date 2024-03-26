@@ -158,9 +158,9 @@ final class Job implements Runnable, Policy {
   HttpEngine newEngine(Connection connection) throws IOException {
     String protocol = request.url().getProtocol();
     RawHeaders requestHeaders = request.rawHeaders();
-    if (protocol.equals("http")) {
+    if ("http".equals(protocol)) {
       return new HttpEngine(client, this, request.method(), requestHeaders, connection, null);
-    } else if (protocol.equals("https")) {
+    } else if ("https".equals(protocol)) {
       return new HttpsEngine(client, this, request.method(), requestHeaders, connection, null);
     } else {
       throw new AssertionError();
@@ -201,7 +201,7 @@ final class Job implements Runnable, Policy {
       case HTTP_SEE_OTHER:
       case HTTP_TEMP_REDIRECT:
         String method = request.method();
-        if (responseCode == HTTP_TEMP_REDIRECT && !method.equals("GET") && !method.equals("HEAD")) {
+        if (responseCode == HTTP_TEMP_REDIRECT && !"GET".equals(method) && !"HEAD".equals(method)) {
           // "If the 307 status code is received in response to a request other than GET or HEAD,
           // the user agent MUST NOT automatically redirect the request"
           return null;
@@ -213,7 +213,7 @@ final class Job implements Runnable, Policy {
         }
 
         URL url = new URL(request.url(), location);
-        if (!url.getProtocol().equals("https") && !url.getProtocol().equals("http")) {
+        if (!"https".equals(url.getProtocol()) && !"http".equals(url.getProtocol())) {
           return null; // Don't follow redirects to unsupported protocols.
         }
 

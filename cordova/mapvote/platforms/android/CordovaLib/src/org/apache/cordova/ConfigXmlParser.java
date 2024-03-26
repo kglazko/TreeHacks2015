@@ -90,28 +90,28 @@ public class ConfigXmlParser {
         while (eventType != XmlResourceParser.END_DOCUMENT) {
             if (eventType == XmlResourceParser.START_TAG) {
                 String strNode = xml.getName();
-                if (strNode.equals("url-filter")) {
+                if ("url-filter".equals(strNode)) {
                     Log.w(TAG, "Plugin " + service + " is using deprecated tag <url-filter>");
                     if (urlMap == null) {
                         urlMap = new ArrayList<String>(2);
                     }
                     urlMap.add(xml.getAttributeValue(null, "value"));
-                } else if (strNode.equals("feature")) {
+                } else if ("feature".equals(strNode)) {
                     //Check for supported feature sets  aka. plugins (Accelerometer, Geolocation, etc)
                     //Set the bit for reading params
                     insideFeature = true;
                     service = xml.getAttributeValue(null, "name");
                 }
-                else if (insideFeature && strNode.equals("param")) {
+                else if (insideFeature && "param".equals(strNode)) {
                     paramType = xml.getAttributeValue(null, "name");
-                    if (paramType.equals("service")) // check if it is using the older service param
+                    if ("service".equals(paramType)) // check if it is using the older service param
                         service = xml.getAttributeValue(null, "value");
-                    else if (paramType.equals("package") || paramType.equals("android-package"))
+                    else if ("package".equals(paramType) || "android-package".equals(paramType))
                         pluginClass = xml.getAttributeValue(null,"value");
-                    else if (paramType.equals("onload"))
+                    else if ("onload".equals(paramType))
                         onload = "true".equals(xml.getAttributeValue(null, "value"));
                 }
-                else if (strNode.equals("access")) {
+                else if ("access".equals(strNode)) {
                     String origin = xml.getAttributeValue(null, "origin");
                     String subdomains = xml.getAttributeValue(null, "subdomains");
                     boolean external = (xml.getAttributeValue(null, "launch-external") != null);
@@ -131,12 +131,12 @@ public class ConfigXmlParser {
                         }
                     }
                 }
-                else if (strNode.equals("preference")) {
+                else if ("preference".equals(strNode)) {
                     String name = xml.getAttributeValue(null, "name").toLowerCase(Locale.ENGLISH);
                     String value = xml.getAttributeValue(null, "value");
                     prefs.set(name, value);
                 }
-                else if (strNode.equals("content")) {
+                else if ("content".equals(strNode)) {
                     String src = xml.getAttributeValue(null, "src");
                     if (src != null) {
                         setStartUrl(src);
@@ -146,7 +146,7 @@ public class ConfigXmlParser {
             else if (eventType == XmlResourceParser.END_TAG)
             {
                 String strNode = xml.getName();
-                if (strNode.equals("feature")) {
+                if ("feature".equals(strNode)) {
                     pluginEntries.add(new PluginEntry(service, pluginClass, onload, urlMap));
 
                     service = "";
