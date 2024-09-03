@@ -21,6 +21,8 @@ import com.squareup.okhttp.internal.http.HttpTransport;
 import com.squareup.okhttp.internal.http.HttpsEngine;
 import com.squareup.okhttp.internal.http.Policy;
 import com.squareup.okhttp.internal.http.RawHeaders;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
@@ -212,7 +214,7 @@ final class Job implements Runnable, Policy {
           return null;
         }
 
-        URL url = new URL(request.url(), location);
+        URL url = Urls.create(request.url(), location, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
         if (!url.getProtocol().equals("https") && !url.getProtocol().equals("http")) {
           return null; // Don't follow redirects to unsupported protocols.
         }

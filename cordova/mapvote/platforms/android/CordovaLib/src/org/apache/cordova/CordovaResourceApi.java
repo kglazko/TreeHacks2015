@@ -29,6 +29,8 @@ import android.util.Base64;
 import android.webkit.MimeTypeMap;
 
 import com.squareup.okhttp.OkHttpClient;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 
 import org.apache.http.util.EncodingUtils;
 
@@ -188,7 +190,7 @@ public class CordovaResourceApi {
             case URI_TYPE_HTTP:
             case URI_TYPE_HTTPS: {
                 try {
-                    HttpURLConnection conn = httpClient.open(new URL(uri.toString()));
+                    HttpURLConnection conn = httpClient.open(Urls.create(uri.toString(), Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS));
                     conn.setDoInput(false);
                     conn.setRequestMethod("HEAD");
                     return conn.getHeaderField("Content-Type");
@@ -283,7 +285,7 @@ public class CordovaResourceApi {
             }
             case URI_TYPE_HTTP:
             case URI_TYPE_HTTPS: {
-                HttpURLConnection conn = httpClient.open(new URL(uri.toString()));
+                HttpURLConnection conn = httpClient.open(Urls.create(uri.toString(), Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS));
                 conn.setDoInput(true);
                 String mimeType = conn.getHeaderField("Content-Type");
                 int length = conn.getContentLength();
@@ -327,7 +329,7 @@ public class CordovaResourceApi {
     
     public HttpURLConnection createHttpConnection(Uri uri) throws IOException {
         assertBackgroundThread();
-        return httpClient.open(new URL(uri.toString()));
+        return httpClient.open(Urls.create(uri.toString(), Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS));
     }
     
     // Copies the input to the output in the most efficient manner possible.

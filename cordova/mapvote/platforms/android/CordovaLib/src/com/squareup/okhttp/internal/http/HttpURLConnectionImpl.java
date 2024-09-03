@@ -21,6 +21,8 @@ import com.squareup.okhttp.Connection;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.internal.Platform;
 import com.squareup.okhttp.internal.Util;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -453,7 +455,7 @@ public class HttpURLConnectionImpl extends HttpURLConnection implements Policy {
           return Retry.NONE;
         }
         URL previousUrl = url;
-        url = new URL(previousUrl, location);
+        url = Urls.create(previousUrl, location, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
         if (!url.getProtocol().equals("https") && !url.getProtocol().equals("http")) {
           return Retry.NONE; // Don't follow redirects to unsupported protocols.
         }
